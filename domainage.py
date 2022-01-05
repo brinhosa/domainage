@@ -34,7 +34,7 @@ RED = '\033[91m'
 
 for line in sys.stdin:
     sys.stdout.write(line)
-	enterurl=line
+    enterurl=line
     url = enterurl.split("//")[-1].split("/")[0].split('?')[0]
     show = "https://input.payapi.io/v1/api/fraud/domain/age/" + url
     r = requests.get(show)
