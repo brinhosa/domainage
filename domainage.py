@@ -43,35 +43,35 @@ for line in sys.stdin:
     os.system('clear')  # on linux / os x
 
     if r.status_code == 200:
-	    print 
-	    print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
-	    print(RED + "************************************************************" + CEND)
-	    print 
+        print 
+        print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
+        print(RED + "************************************************************" + CEND)
+        print 
  
-	
-	    data = r.text
-	    jsonToPython = json.loads(data)
+    
+        data = r.text
+        jsonToPython = json.loads(data)
 
-	    print(YELLOW + "Domain Name: " + CEND + url)
-	    print 
-	    print (jsonToPython['message'])
+        print(YELLOW + "Domain Name: " + CEND + url)
+        print 
+        print (jsonToPython['message'])
 
-	    print 
-	    print(RED + "************************************************************" + CEND)
-	    print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
-	    print 
+        print 
+        print(RED + "************************************************************" + CEND)
+        print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
+        print 
     else:
-	    print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
-	    print(RED + "************************************************************" + CEND)
-	    print 
+        print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
+        print(RED + "************************************************************" + CEND)
+        print 
 
-	    print(YELLOW + " - There Is A Problem" + CEND)
-	    print(YELLOW + " - Checking The Connection " + CEND)
-	    print(YELLOW + " - Enter Website Without HTTP/HTTPS/WWW " + CEND)
-	    print(YELLOW + " - Check If Website Working " + CEND)
+        print(YELLOW + " - There Is A Problem" + CEND)
+        print(YELLOW + " - Checking The Connection " + CEND)
+        print(YELLOW + " - Enter Website Without HTTP/HTTPS/WWW " + CEND)
+        print(YELLOW + " - Check If Website Working " + CEND)
 
-	    print 
-	    print(RED + "************************************************************" + CEND)
-	    print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
-	    print 
+        print 
+        print(RED + "************************************************************" + CEND)
+        print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
+        print 
 
