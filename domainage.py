@@ -42,10 +42,11 @@ for line in sys.stdin:
     show = "https://input.payapi.io/v1/api/fraud/domain/age/" + url
     print(show)
     r = requests.get(show, verify=False)
-
+    print(r.status_code)
+    print(r.text)
     os.system('clear')  # on linux / os x
 
-    if r.status_code == 200:
+    if     print(r.status_code) == 200:
         print 
         print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
         print(RED + "************************************************************" + CEND)
