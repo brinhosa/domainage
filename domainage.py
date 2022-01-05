@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#COMMAND-LINE:  cat domains.txt|xargs -I@ curl https://input.payapi.io/v1/api/fraud/domain/age/@
+
 # Name:     Domain Age Calculator
 # By:       Chetan Soni (modified by Brinhosa)
 # Date:     05 January 2022
