@@ -48,7 +48,7 @@ if r.status_code == 200:
 
 	print(YELLOW + "Domain Name: " + CEND + url)
 	print 
-	print jsonToPython['message']
+	print (jsonToPython['message'])
 
 	print 
 	print(RED + "************************************************************" + CEND)
