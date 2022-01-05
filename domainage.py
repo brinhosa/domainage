@@ -40,7 +40,7 @@ for line in sys.stdin:
     url=line
     #url = enterurl.split("//")[-1].split("/")[0].split('?')[0]
     show = "https://input.payapi.io/v1/api/fraud/domain/age/" + url
-    r = requests.get(show)
+    r = requests.get(show, verify=False)
 
     os.system('clear')  # on linux / os x
 
