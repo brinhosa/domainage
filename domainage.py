@@ -46,7 +46,7 @@ for line in sys.stdin:
 	    print(RED + "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + CEND)
 	    print(RED + "************************************************************" + CEND)
 	    print 
-
+ 
 	
 	    data = r.text
 	    jsonToPython = json.loads(data)
