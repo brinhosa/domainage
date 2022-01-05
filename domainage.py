@@ -41,7 +41,10 @@ for line in sys.stdin:
     #url = enterurl.split("//")[-1].split("/")[0].split('?')[0]
     show = "https://input.payapi.io/v1/api/fraud/domain/age/" + url
     print(show)
-    r = requests.get(show, verify=False)
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',
+    }
+    r = requests.get(show, headers=headers, verify=False)
     print(r.status_code)
     print(r.text)
     os.system('clear')  # on linux / os x
